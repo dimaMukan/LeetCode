@@ -6,11 +6,9 @@ class Solution(object):
         :rtype: List[int]
         """
         res = []
-        s = 0
-        for i in words:
-            if x in i:
-                res.append(s)
-            s += 1
+        for i in range(len(words)):
+            if x in words[i]:
+                res.append(i)
         return res
 
 a = Solution()
